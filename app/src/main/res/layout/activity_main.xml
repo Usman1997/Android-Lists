@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.lists.MainActivity">
+
+
+    <Button
+        android:text="GridView"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridview"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/listview"
+        android:layout_alignStart="@+id/listview" />
+
+    <Button
+        android:text="ListView"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview"
+        android:layout_above="@+id/gridview"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="View Pager"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewpager"
+        android:layout_above="@+id/expandable"
+        android:layout_alignLeft="@+id/listview"
+        android:layout_alignStart="@+id/listview" />
+
+    <Button
+        android:text="Expandable View"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/expandable"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/listview"
+        android:layout_alignLeft="@+id/listview"
+        android:layout_alignStart="@+id/listview" />
+</RelativeLayout>
